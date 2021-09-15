@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/card_booking_info"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/colorWhite"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_marginBottom="15dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Your Booking Information"
+                android:layout_marginStart="8dp"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimaryLight"
+                android:fontFamily="@font/helvetica_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/helvetica_bold"
+                android:text="@string/time_bullet"
+                android:textColor="@color/colorPrimaryLight"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txt_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/helvetica"
+                android:text=" dhjfhhd"
+                android:textColor="@color/colorPrimaryLight"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:text="@string/service_bullet"
+                android:textColor="@color/colorPrimaryLight"
+                android:fontFamily="@font/helvetica_bold"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txt_service_name"
+                android:textColor="@color/colorPrimaryLight"
+                android:fontFamily="@font/helvetica"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:text="@string/serviceType_bullet"
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorPrimaryLight"
+                android:fontFamily="@font/helvetica_bold"
+                android:textSize="12sp"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/txt_Category_name"
+                android:text=" "
+                android:textColor="@color/colorPrimaryLight"
+                android:fontFamily="@font/helvetica"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:text="@string/servicePrice_bullet"
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorPrimaryLight"
+                android:fontFamily="@font/helvetica_bold"
+                android:textSize="12sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                />
+
+            <TextView
+                android:id="@+id/txt_user_ServicePrice_booking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryLight"
+                android:fontFamily="@font/helvetica"
+                android:textSize="12sp"
+                android:layout_gravity="center_vertical"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:text="@string/bullet"
+                android:textColor="@color/colorPrimaryLight"
+                android:fontFamily="@font/helvetica_bold"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txt_time_remain"
+                android:text=""
+                android:textColor="@color/colorPrimaryLight"
+                android:fontFamily="@font/helvetica"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+            <ImageView
+                android:id="@+id/delete_booking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/delete"
+                app:tint="@color/colorPrimaryLight" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/booking_pending"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:visibility="gone">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pending"
+                app:tint="@color/colorPrimaryLight" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pending"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/helvetica"
+                android:textColor="@color/colorPrimaryLight"
+                android:textSize="12sp"
+                android:layout_marginStart="5dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/booking_confirm"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:visibility="gone">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/done"
+                app:tint="@color/colorPrimaryLight" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirmed"
+                android:fontFamily="@font/helvetica"
+                android:layout_gravity="center"
+                android:textColor="@color/colorPrimaryLight"
+                android:textSize="12sp"
+                android:layout_marginStart="5dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/booking_decline"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:visibility="gone">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/declined"
+                app:tint="@color/colorError" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Declined"
+                android:fontFamily="@font/helvetica"
+                android:layout_gravity="center"
+                android:textColor="@color/colorError"
+                android:textSize="12sp"
+                android:layout_marginStart="5dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

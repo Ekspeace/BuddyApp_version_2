@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/ProgressBar_booking"
+        android:visibility="gone"
+        layout="@layout/progressbar"/>
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbarbook"
+        android:elevation="5dp"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="@color/colorPrimaryLight"
+        app:titleTextAppearance="@style/Helvetica.font"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/no_booking_txt"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/helvetica_italic"
+        android:textColor="@color/colorPrimaryLight"
+        android:text="No Booking Information Available"
+        android:textSize="15sp" />
+</LinearLayout>
+
+
+     <androidx.recyclerview.widget.RecyclerView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:id="@+id/recycler_booking_info"
+         tools:listitem="@layout/layout_booking_info"/>
+
+
+</RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
+
+</RelativeLayout>

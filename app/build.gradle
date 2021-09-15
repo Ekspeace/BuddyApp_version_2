@@ -1,0 +1,84 @@
+buildscript {
+    repositories {
+        maven { url 'https://plugins.gradle.org/m2/'}
+    }
+    dependencies {
+        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:0.12.8'
+    }
+}
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+
+repositories {
+    maven { url 'https://maven.google.com' }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.ekspeace.buddyapp_v2"
+        manifestPlaceholders = [
+                onesignal_app_id: '3aaff8eb-5e80-4244-906a-8ba91f576f45',
+                // Project number pulled from dashboard, local value is ignored.
+                onesignal_google_project_number: 'REMOTE'
+        ]
+        minSdkVersion 22
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.android.gms:play-services-location:18.0.0'
+    implementation 'org.jetbrains:annotations:15.0'
+    implementation 'com.google.firebase:firebase-messaging:20.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    //Firebase
+    implementation platform('com.google.firebase:firebase-bom:28.1.0')
+    implementation 'com.google.firebase:firebase-firestore:23.0.1'
+    implementation 'com.google.firebase:firebase-auth:21.0.1'
+    //Paper
+    implementation 'io.paperdb:paperdb:2.6'
+    //Spinner UI
+    implementation 'com.jaredrummler:material-spinner:1.3.1'
+    //Calender Ui
+    implementation 'devs.mulham.horizontalcalendar:horizontalcalendar:1.3.4'
+    //EventBus
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    // StepView
+    implementation 'com.shuhart.stepview:stepview:1.5.1'
+    //third party library
+    implementation "com.mikepenz:aboutlibraries:6.2.3"
+    //dexter for permission
+    implementation "com.karumi:dexter:5.0.0"
+    //OneSignal for push notifications
+    implementation 'com.onesignal:OneSignal:3.15.1'
+    //picasso for loading images
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+}

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Buddy</string>
+    <string name="Forgot_Password"><u>Forgot Password ?</u></string>
+    <string name="Sign_Up"><u>Sign Up</u></string>
+    <string name="Sign_In"><u>Sign In</u></string>
+    <string name="discount_message">Hi there, Are you a first time customer ?, then its your lucky day because we offer 50% off in all out services</string>
+    <string name="drawerOpen">drawerOpen</string>
+    <string name="drawerClose">drawerClose</string>
+
+    <string name="OtherType_bullet">\u2022 Pick up Type:\t</string>
+    <string name="OtherInfo_bullet">\u2022 Pick up Info:\t</string>
+    <string name="time_bullet">\u2022 Time:\t</string>
+    <string name="time_ago_bullet">\u2022 Time ago:\t</string>
+    <string name="Maps_API">AIzaSyCf4Dbej03Ew69qh8ngY6oTBtb71RfVVVg</string>
+    <string name="service_bullet">\u2022 Service:\t</string>
+    <string name="servicePrice_bullet">\u2022 Price:\t</string>
+    <string name="serviceType_bullet">\u2022 Service Category:\t</string>
+    <string name="bullet">\u2022 Time remain:\t</string>
+
+    <string name="about_us_description">This app projects to render services such as car washing services, buying essentials on your behalf, and least but not least, private and confidential orders and pick ups. What separates this app from others is that it does not consider you only as a customer, but as a buddy too.\n\n It strives in protecting the confidential credentials of customers and making sure that their privacy is protected. In case potential customers might be scared of paying online and getting scammed, the buddy app allows you to pay in cash only once the requested service has been rendered in satisfactory time.\n\n Services rendered through the app may be subject to setting appointments ( through provided numbers) depending on the service required and some may be rendered instantly to your location. Services are also subject to scrutiny in any case of dissatisfaction and refunds or discounts will be taken into consideration.</string>
+</resources>

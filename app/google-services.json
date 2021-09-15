@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "891443989640",
+    "project_id": "buddy-245a0",
+    "storage_bucket": "buddy-245a0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:891443989640:android:568cecbc38340b3766a33d",
+        "android_client_info": {
+          "package_name": "com.ekspeace.buddyapp_v2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "891443989640-u50kf79mojjfv0r7e2i1m9tiinfn7r1q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAj6aIoIlaWCwDaODFMNfYFMw7An1JWhMc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "891443989640-u50kf79mojjfv0r7e2i1m9tiinfn7r1q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

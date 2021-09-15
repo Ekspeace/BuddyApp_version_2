@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+     <item>
+         <layer-list>
+             <item>
+                 <shape>
+                     <stroke android:color="@color/colorBlack" android:width="1dp"/>
+                     <solid android:color="@color/colorPrimaryLight"/>
+                 </shape>
+             </item>
+             <item>
+                 <bitmap android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="end" android:src="@drawable/swipe_left" android:tint="@color/colorBlack" />
+             </item>
+         </layer-list>
+     </item>
+</selector>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.BookingFragmentOne">
+
+<RelativeLayout
+    android:id="@+id/relative_layout_booking"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    android:background="@color/colorPrimary">
+    <TextView
+        android:id="@+id/service_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Specify your service"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:fontFamily="@font/helvetica"
+        android:textColor="@color/colorPrimaryLight"/>
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="15dp"
+        app:ms_arrow_tint="@color/colorBlack"
+        app:ms_hint="Please choose your option"
+        app:ms_hint_color="@color/colorPrimaryLight"
+        app:ms_text_color="@color/colorPrimaryLight"
+        app:ms_background_color="@color/colorWhite"
+        android:fontFamily="@font/helvetica"
+        android:popupBackground="@color/colorPrimary"
+        android:layout_below="@id/service_name" />
+    <!--Car Wash-->
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:theme="@style/WidgetsTheme"
+        android:layout_below="@id/spinner">
+        <RadioButton
+            android:id="@+id/radio_inside"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inside"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="13sp"
+            android:fontFamily="@font/helvetica" />
+
+        <RadioButton
+            android:id="@+id/radio_outside"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Outside"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="13sp"
+            android:fontFamily="@font/helvetica"/>
+        <RadioButton
+            android:id="@+id/radio_both"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Both"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="13sp"
+            android:fontFamily="@font/helvetica"/>
+
+    </RadioGroup>
+    <!--Cleaning-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/spinner">
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/rooms_number_one"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            app:ms_hint="Provide number of rooms"
+            android:fontFamily="@font/helvetica"
+            app:ms_hint_color="@color/colorPrimaryLight"
+            android:layout_marginHorizontal="15dp"
+            app:ms_arrow_tint="@color/colorBlack"
+            app:ms_text_color="@color/colorPrimaryLight"
+            app:ms_background_color="@color/colorWhite"
+            android:popupBackground="@color/colorPrimary"
+        />
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/ground_meters"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            app:ms_hint="Provide a type"
+            app:ms_hint_color="@color/colorPrimaryLight"
+            android:layout_marginHorizontal="15dp"
+            app:ms_arrow_tint="@color/colorBlack"
+            android:fontFamily="@font/helvetica"
+            app:ms_text_color="@color/colorPrimaryLight"
+            app:ms_background_color="@color/colorWhite"
+            android:popupBackground="@color/colorPrimary"
+            />
+    </LinearLayout>
+    <!---->
+</RelativeLayout>
+
+<RelativeLayout
+    android:id="@+id/relative_layout_order"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    android:background="@color/colorPrimary">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/pickup_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="10dp"
+        android:hint="What type of a pick up you request?"
+        android:textColorHint="@color/colorGray"
+        app:boxStrokeColor="@color/colorBlack"
+        app:errorEnabled="true"
+        app:errorTextAppearance="@style/ErrorAppearance"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helvetica"
+            android:textColor="@color/colorBlack"
+            android:drawableTint="@color/colorPrimaryLight"
+            android:drawablePadding="8dp"
+            style="@style/Helvetica.font"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/pickup_more_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:hint="Provide more information about your pick up"
+        android:textColorHint="@color/colorGray"
+        app:boxStrokeColor="@color/colorBlack"
+        app:errorEnabled="true"
+        app:errorTextAppearance="@style/ErrorAppearance"
+        android:layout_below="@id/pickup_type"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helvetica"
+            android:textColor="@color/colorBlack"
+            android:lines="7"
+            android:gravity="top"
+            android:drawableTint="@color/colorPrimaryLight"
+            android:drawablePadding="8dp"
+            style="@style/Helvetica.font"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</RelativeLayout>
+</FrameLayout>

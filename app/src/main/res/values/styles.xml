@@ -1,0 +1,37 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryLight</item>
+        <item name="colorAccent">@color/colorBlack</item>
+        <item name="android:label">" "</item>
+    </style>
+    <style name="WidgetsTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryLight</item>
+        <item name="colorAccent">@color/colorPrimaryLight</item>
+    </style>
+    <style name="TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <!-- Customize your theme here. -->
+        <item name="boxStrokeWidth">2dp</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.ActionBar" />
+    <style name="Helvetica.font" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/helvetica</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="ErrorAppearance" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/helvetica</item>
+        <item name="android:textSize">13sp</item>
+        <item name="background">@color/colorError</item>
+        <item name="android:textColor">@color/colorErrorDark</item>
+    </style>
+
+    <style name="SpinnerStyle" >
+    <item name="background">@drawable/dark_border</item>
+
+    </style>
+</resources>
